@@ -18,7 +18,7 @@ jobs:
           cache: gradle
 
       - name: Publish
-        run: ./buildSrc/scripts/publish.sh
+        run: bash ./buildSrc/scripts/publish.sh
 
       - name: Commit
         uses: EndBug/add-and-commit@v9
