@@ -3,13 +3,14 @@
   <groupId>com.github.kusaanko</groupId>
   <artifactId>imgui-java-natives-linux-ft</artifactId>
   <versioning>
-    <latest>362c17</latest>
-    <release>362c17</release>
+    <latest>589b0d</latest>
+    <release>589b0d</release>
     <versions>
       <version>7028be</version>
       <version>d9503d</version>
       <version>362c17</version>
+      <version>589b0d</version>
     </versions>
-    <lastUpdated>20230827110820</lastUpdated>
+    <lastUpdated>20230827112107</lastUpdated>
   </versioning>
 </metadata>

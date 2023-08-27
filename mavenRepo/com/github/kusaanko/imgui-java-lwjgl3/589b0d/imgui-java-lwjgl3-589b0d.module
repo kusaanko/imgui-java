@@ -1,0 +1,92 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.kusaanko",
+    "module": "imgui-java-lwjgl3",
+    "version": "589b0d",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "imgui-java-lwjgl3-589b0d.jar",
+          "url": "imgui-java-lwjgl3-589b0d.jar",
+          "size": 37323,
+          "sha512": "f76ea7e0d76a615cfe62c398c460b984618a2f78e2757fe4996ed0b26dd8d5802f240b5081af2e323095a3465d5f37eb0d0cdeb36fdd34cd2af40ae8f7615991",
+          "sha256": "8af626b36a6fbd4462fd572ac40affac29faab00c2a35f5bc8db2cef4a22a4ac",
+          "sha1": "dc3f3c66deca936bc56c87217754e5abf520ba5c",
+          "md5": "8b3cc1e8f094568d2d996008143aad1c"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-bom",
+          "version": {
+            "requires": "3.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl"
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw"
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl"
+        },
+        {
+          "group": "com.github.kusaanko",
+          "module": "imgui-java-binding",
+          "version": {
+            "requires": "589b0d"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imgui-java-lwjgl3-589b0d.jar",
+          "url": "imgui-java-lwjgl3-589b0d.jar",
+          "size": 37323,
+          "sha512": "f76ea7e0d76a615cfe62c398c460b984618a2f78e2757fe4996ed0b26dd8d5802f240b5081af2e323095a3465d5f37eb0d0cdeb36fdd34cd2af40ae8f7615991",
+          "sha256": "8af626b36a6fbd4462fd572ac40affac29faab00c2a35f5bc8db2cef4a22a4ac",
+          "sha1": "dc3f3c66deca936bc56c87217754e5abf520ba5c",
+          "md5": "8b3cc1e8f094568d2d996008143aad1c"
+        }
+      ]
+    }
+  ]
+}
