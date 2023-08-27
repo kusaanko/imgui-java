@@ -1,0 +1,27 @@
+name: Upload to local maven
+on: [ workflow_dispatch ]
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: 8
+          distribution: liberica
+          cache: gradle
+
+      - name: Publish
+        run: ./buildSrc/scripts/publish.sh
+
+      - name: Commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: '[ci skip] upload to maven'
