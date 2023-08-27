@@ -3,11 +3,12 @@
   <groupId>com.github.kusaanko</groupId>
   <artifactId>imgui-java-natives-macos</artifactId>
   <versioning>
-    <latest>7028be</latest>
-    <release>7028be</release>
+    <latest>d9503d</latest>
+    <release>d9503d</release>
     <versions>
       <version>7028be</version>
+      <version>d9503d</version>
     </versions>
-    <lastUpdated>20230827073146</lastUpdated>
+    <lastUpdated>20230827075652</lastUpdated>
   </versioning>
 </metadata>
