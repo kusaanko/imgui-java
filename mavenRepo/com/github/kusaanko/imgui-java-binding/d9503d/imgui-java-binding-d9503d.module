@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.kusaanko",
+    "module": "imgui-java-binding",
+    "version": "d9503d",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "imgui-java-binding-d9503d.jar",
+          "url": "imgui-java-binding-d9503d.jar",
+          "size": 149469,
+          "sha512": "8447ad68fb940cb8b75c953b1fb4be048c1a494cee67f5d27f7c3ef3c6bcf0a0b2f351c9a5733b2773948f0e3f401284aa899d247f3e5b4a98daaae2025e2e9e",
+          "sha256": "ee552a2593122d40d57f0418f1bf7c6759d6cf83525bd2d5d27cf0782f017a58",
+          "sha1": "cc2c189fddb096ad041d44250a0f013f94383bbf",
+          "md5": "320c5b4963a305350f9a7745c915698c"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "imgui-java-binding-d9503d.jar",
+          "url": "imgui-java-binding-d9503d.jar",
+          "size": 149469,
+          "sha512": "8447ad68fb940cb8b75c953b1fb4be048c1a494cee67f5d27f7c3ef3c6bcf0a0b2f351c9a5733b2773948f0e3f401284aa899d247f3e5b4a98daaae2025e2e9e",
+          "sha256": "ee552a2593122d40d57f0418f1bf7c6759d6cf83525bd2d5d27cf0782f017a58",
+          "sha1": "cc2c189fddb096ad041d44250a0f013f94383bbf",
+          "md5": "320c5b4963a305350f9a7745c915698c"
+        }
+      ]
+    }
+  ]
+}
