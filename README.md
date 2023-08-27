@@ -4,6 +4,7 @@ Original https://github.com/SpaiR/imgui-java
 This repository includes some changes.
 
 - Support Apple Silicon
+- Fix ImFontAtlas#getGlyphRanges short array size
 
 ### Dependencies
 
@@ -21,7 +22,9 @@ dependencies {
 
 Available versions:
  - 7028be (08/27/2023) imgui-java 1.86.10
- - d9503d (08/27/2023) imgui-java 1.86.10 - latest
+ - d9503d (08/27/2023) imgui-java 1.86.10 - has a bug
+ - 362c17 (08/27/2023) imgui-java 1.86.10 - has a bug
+ - 589b0d (08/27/2023) imgui-java 1.86.10 - latest
 
 # License
 
