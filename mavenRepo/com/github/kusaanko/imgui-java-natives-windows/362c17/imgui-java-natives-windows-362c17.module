@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.kusaanko",
+    "module": "imgui-java-natives-windows",
+    "version": "362c17",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "imgui-java-natives-windows-362c17.jar",
+          "url": "imgui-java-natives-windows-362c17.jar",
+          "size": 1863769,
+          "sha512": "4010ebbf87593b41728878127c9549ab415950d992451e427633183019260db31a19adb6cc45fbbf27c82c35f3098145d7d528d6d184318a77e70e29bfb672c0",
+          "sha256": "85feeddc222ae0549e327c2663c94c626d3a723572269e6b5e3cc17be513d0ca",
+          "sha1": "ee7d640dc124ac66e63b434e4219d0a0d36cad6e",
+          "md5": "87a5493bb35374dda513981814f16ba8"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "imgui-java-natives-windows-362c17.jar",
+          "url": "imgui-java-natives-windows-362c17.jar",
+          "size": 1863769,
+          "sha512": "4010ebbf87593b41728878127c9549ab415950d992451e427633183019260db31a19adb6cc45fbbf27c82c35f3098145d7d528d6d184318a77e70e29bfb672c0",
+          "sha256": "85feeddc222ae0549e327c2663c94c626d3a723572269e6b5e3cc17be513d0ca",
+          "sha1": "ee7d640dc124ac66e63b434e4219d0a0d36cad6e",
+          "md5": "87a5493bb35374dda513981814f16ba8"
+        }
+      ]
+    }
+  ]
+}

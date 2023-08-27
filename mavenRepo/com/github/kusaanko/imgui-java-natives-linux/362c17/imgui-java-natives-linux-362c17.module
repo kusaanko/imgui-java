@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.kusaanko",
+    "module": "imgui-java-natives-linux",
+    "version": "362c17",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "imgui-java-natives-linux-362c17.jar",
+          "url": "imgui-java-natives-linux-362c17.jar",
+          "size": 1700735,
+          "sha512": "57c21867235e024a8abe9008e6d623130299058a42f80c0ce4d7059d3690ea56788e1ae455216d4a988b57adad316e5c6dd0218236f9fd71a5096060906a7ec7",
+          "sha256": "747cd2f7d793de91a0cadf48380b893acf0a3b54bfe629e713daba86334105d6",
+          "sha1": "129f54020c3b611eb5d4ffd33cb52e9d5ea3c201",
+          "md5": "ce6ed95f32dafa97617825c0b0c5db99"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "imgui-java-natives-linux-362c17.jar",
+          "url": "imgui-java-natives-linux-362c17.jar",
+          "size": 1700735,
+          "sha512": "57c21867235e024a8abe9008e6d623130299058a42f80c0ce4d7059d3690ea56788e1ae455216d4a988b57adad316e5c6dd0218236f9fd71a5096060906a7ec7",
+          "sha256": "747cd2f7d793de91a0cadf48380b893acf0a3b54bfe629e713daba86334105d6",
+          "sha1": "129f54020c3b611eb5d4ffd33cb52e9d5ea3c201",
+          "md5": "ce6ed95f32dafa97617825c0b0c5db99"
+        }
+      ]
+    }
+  ]
+}

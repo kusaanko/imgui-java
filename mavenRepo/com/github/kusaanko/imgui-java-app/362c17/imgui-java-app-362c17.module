@@ -1,0 +1,446 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.kusaanko",
+    "module": "imgui-java-app",
+    "version": "362c17",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-bom",
+          "version": {
+            "requires": "3.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl"
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw"
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl"
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "com.github.kusaanko",
+          "module": "imgui-java-binding",
+          "version": {
+            "requires": "362c17"
+          }
+        },
+        {
+          "group": "com.github.kusaanko",
+          "module": "imgui-java-lwjgl3",
+          "version": {
+            "requires": "362c17"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imgui-java-app-362c17.jar",
+          "url": "imgui-java-app-362c17.jar",
+          "size": 6714128,
+          "sha512": "9b8d8a9e27a8b293969e0af2cfb3b17a6cbb1e1c209608b2f8894fc135370119a4f80e9b909f65472d9717a9af31f0710ced9c560ed6c13529bc11c924b08139",
+          "sha256": "93e873b518294de060b2f84a1d07c9646d2cf522d00f7ee733e46bbcd68654c3",
+          "sha1": "6b743e3f4f9905d29f03132495c77dc32d76a1e0",
+          "md5": "9537f0f49e0a46e1af7526060ba6f0dc"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-bom",
+          "version": {
+            "requires": "3.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl"
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw"
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl"
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "com.github.kusaanko",
+          "module": "imgui-java-binding",
+          "version": {
+            "requires": "362c17"
+          }
+        },
+        {
+          "group": "com.github.kusaanko",
+          "module": "imgui-java-lwjgl3",
+          "version": {
+            "requires": "362c17"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imgui-java-app-362c17.jar",
+          "url": "imgui-java-app-362c17.jar",
+          "size": 6714128,
+          "sha512": "9b8d8a9e27a8b293969e0af2cfb3b17a6cbb1e1c209608b2f8894fc135370119a4f80e9b909f65472d9717a9af31f0710ced9c560ed6c13529bc11c924b08139",
+          "sha256": "93e873b518294de060b2f84a1d07c9646d2cf522d00f7ee733e46bbcd68654c3",
+          "sha1": "6b743e3f4f9905d29f03132495c77dc32d76a1e0",
+          "md5": "9537f0f49e0a46e1af7526060ba6f0dc"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "imgui-java-app-362c17-all.jar",
+          "url": "imgui-java-app-362c17-all.jar",
+          "size": 9943076,
+          "sha512": "8cae9acd4fa4aca4ff8b47b7b5fe28be1c688209c8f7540e6fc3514e663199f1e22130e804acba593ba2a42e153e97a4e7a23be6970bf6d7d7169a405b76cacd",
+          "sha256": "69e73c4cbbe3fd7df600b14ab21b4b721bfbbf19402466ebf1287aa82202a1fb",
+          "sha1": "c98ad1fbf2402fde1e671c04412c86ff7fbb882b",
+          "md5": "e90d8e259a8dba2ca67ac70d977ffa6d"
+        }
+      ]
+    }
+  ]
+}
