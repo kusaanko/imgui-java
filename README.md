@@ -5,6 +5,7 @@ This repository includes some changes.
 
 - Support Apple Silicon
 - Fix ImFontAtlas#getGlyphRanges short array size
+- Stop making temp dir every time
 
 ### Dependencies
 
