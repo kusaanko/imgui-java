@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.kusaanko",
+    "module": "imgui-java-natives-macos-ft",
+    "version": "482a19",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "imgui-java-natives-macos-ft-482a19.jar",
+          "url": "imgui-java-natives-macos-ft-482a19.jar",
+          "size": 2821729,
+          "sha512": "bd1a44f584f5de4dec77311b576a8b9edd73192ee564f6fd1665b979b6db7c74c324d26540cea154007c2a1765efc7c6f70fd0c88e0250fa254e2eb87d329ffe",
+          "sha256": "70e8b3a5b9808208137326d095e72cb1ffbedbbfef01f768ebcfeed0f1dd0586",
+          "sha1": "92d2b11527315f163df40cb3b70017eba37ba99a",
+          "md5": "9995fcc89eda1908f28a1a3e89ffbc1d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "imgui-java-natives-macos-ft-482a19.jar",
+          "url": "imgui-java-natives-macos-ft-482a19.jar",
+          "size": 2821729,
+          "sha512": "bd1a44f584f5de4dec77311b576a8b9edd73192ee564f6fd1665b979b6db7c74c324d26540cea154007c2a1765efc7c6f70fd0c88e0250fa254e2eb87d329ffe",
+          "sha256": "70e8b3a5b9808208137326d095e72cb1ffbedbbfef01f768ebcfeed0f1dd0586",
+          "sha1": "92d2b11527315f163df40cb3b70017eba37ba99a",
+          "md5": "9995fcc89eda1908f28a1a3e89ffbc1d"
+        }
+      ]
+    }
+  ]
+}
