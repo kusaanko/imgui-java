@@ -18,10 +18,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.lang.ref.WeakReference;
+import java.nio.file.AccessDeniedException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.Optional;
+import java.util.Properties;
 
 public class ImGui {
     private static final String LIB_PATH_PROP = "imgui.library.path";
@@ -29,8 +32,8 @@ public class ImGui {
     private static final String LIB_NAME_BASE = "imgui-java";
     private static final boolean is64Bit = System.getProperty("os.arch").contains("64") || System.getProperty("os.arch").startsWith("armv8");
     private static final boolean isARM = System.getProperty("os.arch").equals("arm") || System.getProperty("os.arch").startsWith("aarch64");
-
-    private static final String LIB_TMP_DIR_PREFIX = "imgui-java-natives_" + System.currentTimeMillis();
+    private static final String LIB_NAME_DEFAULT = System.getProperty("os.arch").contains("64") ? "imgui-java64" : "imgui-java";
+    private static final String LIB_TMP_DIR_PREFIX = "imgui-java-natives";
 
     private static final ImGuiContext IMGUI_CONTEXT;
     private static final ImGuiIO IMGUI_IO;
@@ -61,14 +64,19 @@ public class ImGui {
         final String libName = System.getProperty(LIB_NAME_PROP, genLibName);
         final String fullLibName = resolveFullLibName();
 
-        final String extractedLibAbsPath = tryLoadFromClasspath(fullLibName);
-
         if (libPath != null) {
-            System.load(Paths.get(libPath).resolve(fullLibName).toFile().getAbsolutePath());
-        } else if (extractedLibAbsPath != null) {
-            System.load(extractedLibAbsPath);
+            System.load(Paths.get(libPath).resolve(fullLibName).toAbsolutePath().toString());
         } else {
-            System.loadLibrary(libName);
+            try {
+                System.loadLibrary(libName);
+            } catch (Exception | Error e) {
+                final String extractedLibAbsPath = tryLoadFromClasspath(fullLibName);
+                if (extractedLibAbsPath != null) {
+                    System.load(extractedLibAbsPath);
+                } else {
+                    throw e;
+                }
+            }
         }
 
         IMGUI_CONTEXT = new ImGuiContext(0);
@@ -137,17 +145,38 @@ public class ImGui {
                 return null;
             }
 
-            final Path tmpDir = Paths.get(System.getProperty("java.io.tmpdir")).resolve(LIB_TMP_DIR_PREFIX);
-            tmpDir.toFile().mkdirs();
+            final String version = getVersionString().orElse("undefined");
+            final Path tmpDir = Paths.get(System.getProperty("java.io.tmpdir")).resolve(LIB_TMP_DIR_PREFIX).resolve(version);
+            if (!Files.exists(tmpDir)) {
+                Files.createDirectories(tmpDir);
+            }
 
             final Path libBin = tmpDir.resolve(fullLibName);
-            Files.copy(is, libBin, StandardCopyOption.REPLACE_EXISTING);
-            libBin.toFile().deleteOnExit();
+            try {
+                Files.copy(is, libBin, StandardCopyOption.REPLACE_EXISTING);
+            } catch (AccessDeniedException e) {
+                if (!Files.exists(libBin)) {
+                    throw e;
+                }
+            }
 
-            return libBin.toFile().getAbsolutePath();
+            return libBin.toAbsolutePath().toString();
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }
+    }
+
+    private static Optional<String> getVersionString() {
+        final Properties properties = new Properties();
+        try (InputStream is = ImGui.class.getResourceAsStream("/imgui/imgui-java.properties")) {
+            if (is != null) {
+                properties.load(is);
+                return Optional.of(properties.get("imgui.java.version").toString());
+            }
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+        return Optional.empty();
     }
 
     /**
