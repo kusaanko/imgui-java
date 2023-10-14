@@ -152,7 +152,7 @@ class GenerateLibs extends DefaultTask {
                 target.cppFlags += ' -I/usr/local/include/freetype2'
                 if (forMacArm64) {
                     //For GHA
-                    target.cppFlags += ' -I/usr/local/include/freetype2'
+                    target.cppFlags += ' -I/usr/local/arm64/include/freetype2'
                 }
                 break
         }
