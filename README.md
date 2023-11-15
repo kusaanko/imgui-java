@@ -27,7 +27,8 @@ Available versions:
  - 362c17 (08/27/2023) imgui-java 1.86.10 - has a bug
  - 589b0d (08/27/2023) imgui-java 1.86.10
  - 2a2819 (08/28/2023) imgui-java 1.86.10
- - 482a19 (08/28/2023) imgui-java 1.86.10 - latest
+ - 482a19 (08/28/2023) imgui-java 1.86.10
+ - 7dc310 (11/15/2023) imgui-java 1.86.11 - latest
 
 # License
 
