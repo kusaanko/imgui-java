@@ -31,4 +31,4 @@ Available versions:
 
 # License
 
-See the LICENSE file for license rights and limitations (Apache-2.0).
+See the LICENSE file for license rights and limitations (MIT).
